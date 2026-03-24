@@ -1,16 +1,17 @@
 
 
-# From Frustration to Flow: Building a Self-Healing DevSecOps Pipeline on AWS
+# Building a Self-Healing DevSecOps Pipeline on AWS
 
 
 
 ## Introduction
 
-If you’ve ever been overwhelmed by a flood of security vulnerabilities, you’re not alone. I’ve been there—scrolling through endless alerts, patching the same issues again and again, wishing there was a better way. That’s when I decided to build a solution that could spot, analyze, and fix vulnerabilities as part of my DevSecOps pipeline.
+If you’ve ever been overwhelmed by a flood of security vulnerabilities, you’re not alone. I’ve been there scrolling through endless alerts, patching the same issues again and again, wishing there was a better way. That’s when I decided to build a solution that could spot, analyze, and fix vulnerabilities as part of my DevSecOps pipeline.
 
 In this blog, I’ll share how I solved this problem using AWS services and automation. I’ll walk you through the architecture, the practical steps, and the code that made my pipeline self-healing—so you can spend less time firefighting and more time building.
 
 ---
+## Brief: 
 
 Modern software teams face a relentless stream of security vulnerabilities. What if your pipeline could not only detect, but also automatically fix these issues—no human intervention required? This article provides a deep dive into building an AI Agent–driven, self-healing DevSecOps pipeline on AWS, leveraging Lambda, Terraform, and Amazon Bedrock (Claude 3 Haiku).
 
@@ -26,11 +27,14 @@ We’re building a pipeline that acts like a DevSecOps engineer who never sleeps
 - **Thinks** with the help of GenAI (Amazon Bedrock) to decide the best fix
 - **Acts** by automatically patching, creating Pull Requests, and alerting your team
 
-All of this happens on AWS, using Lambda, Terraform, and a suite of cloud-native services. The result? A self-healing pipeline that keeps your software secure, 24/7.
+All of this happens on AWS, using Lambda, Terraform, and a suite of cloud-native services. 
+The result? 
+
+A self-healing pipeline that keeps your software secure, 24/7.
 
 ---
 
-## Architecture: How the Magic Happens
+## Architecture:
 
 The pipeline is designed to work like a 24/7 DevSecOps engineer, using an AI Agent to automatically detect, analyze, and fix vulnerabilities. The process is simple:
 
