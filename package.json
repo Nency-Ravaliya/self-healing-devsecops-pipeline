@@ -1,0 +1,14 @@
+{
+  "name": "ai-self-healing-devsecops-demo",
+  "version": "1.0.0",
+  "description": "Demo app for AI Agent based self-healing DevSecOps pipeline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "sbom": "node scripts/generate-sbom.js",
+    "scan": "node scripts/scan-vulns.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
